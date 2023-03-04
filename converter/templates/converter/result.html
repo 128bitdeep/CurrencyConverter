@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Results</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #4CAF50;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .back-button {
+            text-align: center;
+            width: 100%;
+            background-color: #caf3cc;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .back-button:hover a {
+            background-color: #45a049
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Currency Conversion Results</h2>
+        <table>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Amount</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>{{ from_currency }}</td>
+                <td>{{ to_currency }}</td>
+                <td>{{ amount }}</td>
+                <td>{{ result }}</td>
+            </tr>
+        </table>
+        <div class="back-button">
+            <a href="javascript:history.back()">Go back</a>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
